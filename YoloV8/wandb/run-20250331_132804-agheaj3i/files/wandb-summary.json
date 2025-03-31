@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":223},"_runtime":223.527521976,"_timestamp":1.743427907895339e+09,"metrics/mAP50-95(B)":0.5324726815727034,"metrics/mAP50(B)":0.9444214176198835,"_step":4,"metrics/recall(B)":0.8577950897228006,"fitness":0.5736675551774215,"metrics/precision(B)":0.9741855492225393}

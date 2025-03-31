@@ -1,0 +1,102 @@
+{
+    "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+    "python": "3.11.11",
+    "heartbeatAt": "2025-03-31T11:06:53.151039",
+    "startedAt": "2025-03-31T11:06:52.444604",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/content/drive/MyDrive/INM_705_Practice_final/Yolov11/run_sweep.py",
+    "codePathLocal": "run_sweep.py",
+    "codePath": "run_sweep.py",
+    "host": "def43aae453f",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2200.2180000000003,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.218,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 235.67584228515625,
+            "used": 41.31985855102539
+        }
+    },
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 83.47704696655273
+    }
+}

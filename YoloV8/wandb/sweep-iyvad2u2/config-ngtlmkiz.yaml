@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch:
+  value: 32
+epochs:
+  value: 50
+imgsz:
+  value: 512
+lr0:
+  value: 0.00676410037089518
+optimizer:
+  value: Adam

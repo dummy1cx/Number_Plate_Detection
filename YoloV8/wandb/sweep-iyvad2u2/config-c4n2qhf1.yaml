@@ -1,0 +1,12 @@
+wandb_version: 1
+
+batch:
+  value: 16
+epochs:
+  value: 50
+imgsz:
+  value: 512
+lr0:
+  value: 0.0053356307493823505
+optimizer:
+  value: SGD

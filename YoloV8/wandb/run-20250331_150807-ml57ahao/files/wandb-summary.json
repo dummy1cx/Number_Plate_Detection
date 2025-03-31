@@ -1,0 +1,1 @@
+{"metrics/recall(B)":0.928038518316296,"_wandb":{"runtime":109},"metrics/mAP50(B)":0.9540399091119643,"fitness":0.6124379962102772,"_timestamp":1.7434337963522167e+09,"metrics/precision(B)":0.9533042024428761,"metrics/mAP50-95(B)":0.5744822281100896,"_runtime":109.202330585,"_step":4}

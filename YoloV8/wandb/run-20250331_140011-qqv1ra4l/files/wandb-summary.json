@@ -1,0 +1,1 @@
+{"fitness":0.5858019477134319,"_step":4,"_runtime":224.315732291,"_wandb":{"runtime":224},"metrics/mAP50-95(B)":0.5489912042122378,"_timestamp":1.7434298362154999e+09,"metrics/precision(B)":0.9213657841706623,"metrics/recall(B)":0.8409090909090909,"metrics/mAP50(B)":0.9170986392241779}

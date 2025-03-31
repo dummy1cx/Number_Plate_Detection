@@ -1,0 +1,1 @@
+{"metrics/mAP50-95(B)":0.5333472535811549,"_step":4,"metrics/precision(B)":0.8788577056074405,"_timestamp":1.7434336700849428e+09,"metrics/mAP50(B)":0.9107744657762145,"fitness":0.5710899748006608,"metrics/recall(B)":0.8245134957091479,"_wandb":{"runtime":141},"_runtime":141.645868073}
