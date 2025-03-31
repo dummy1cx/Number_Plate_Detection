@@ -1,0 +1,6 @@
+## All necessary infor like api and name of the project
+## Delete before pushing to github
+## API for wandb tracking
+WANDB_API_KEY='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'  ## API removed before pushing the 
+WANDB_PROJECT="YOLOv8_NumberPlate_Final"           ## code to repo
+WANDB_RUN_NAME="YOLOv8n_NP_Run1"                   ## ------------------------------

@@ -1,0 +1,22 @@
+# ----------------------------------------------------
+# Sweep function from wandb for hyper parameter tuning
+# This code format is referenced from wandb website
+# ----------------------------------------------------
+method: bayes  
+metric:
+  name: metrics/mAP50
+  goal: maximize
+
+parameters:
+  lr0:
+    min: 0.0001
+    max: 0.01
+  batch:
+    values: [8, 16, 32]
+  optimizer:
+    values: ["SGD", "Adam", "AdamW"]
+  epochs:
+    value: 50
+  imgsz:
+    values: [416, 512, 640]
+
