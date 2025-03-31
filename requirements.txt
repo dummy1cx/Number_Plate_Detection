@@ -10,3 +10,6 @@ scikit-learn
 tqdm
 tensorboard
 pyyaml
+opencv-python
+matplotlib
+ultralytics
