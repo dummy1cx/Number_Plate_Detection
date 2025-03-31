@@ -21,18 +21,18 @@ def make_dirs():
     for split in SPLITS:
         os.makedirs(os.path.join(BASE_DIR, "images", split), exist_ok=True)
         os.makedirs(os.path.join(BASE_DIR, "labels", split), exist_ok=True)
-    print("📁 Output folders created.")
+    print("Output folders created.")
 
 def split_and_move_data():
     image_extensions = (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG")
     all_images = [f for f in os.listdir(IMAGES_DIR) if f.endswith(image_extensions)]
 
-    print(f"✅ Looking inside: {IMAGES_DIR}")
-    print(f"📸 Total image files found: {len(all_images)}")
-    print(f"🗂️ Sample files: {all_images[:5]}")
+    print(f"Looking inside: {IMAGES_DIR}")
+    print(f"Total image files found: {len(all_images)}")
+    print(f"Sample files: {all_images[:5]}")
 
     if len(all_images) == 0:
-        print("❌ No images found. Check your IMAGES_DIR path or image file types.")
+        print("No images found. Check your IMAGES_DIR path or image file types.")
         return
 
     train_files, test_files = train_test_split(all_images, test_size=SPLIT_RATIOS[2], random_state=42)
@@ -55,18 +55,18 @@ def split_and_move_data():
 
             try:
                 shutil.copy(img_src, img_dst)
-                print(f"✅ Copied image: {img_src} → {img_dst}")
+                print(f"Copied image: {img_src} → {img_dst}")
             except Exception as e:
-                print(f"❌ Failed to copy image {img_src}: {e}")
+                print(f"Failed to copy image {img_src}: {e}")
 
             if os.path.exists(label_src):
                 try:
                     shutil.copy(label_src, label_dst)
-                    print(f"✅ Copied label: {label_src} → {label_dst}")
+                    print(f"Copied label: {label_src} → {label_dst}")
                 except Exception as e:
-                    print(f"❌ Failed to copy label {label_src}: {e}")
+                    print(f"Failed to copy label {label_src}: {e}")
             else:
-                print(f"⚠️ No label found for {img_src}")
+                print(f"No label found for {img_src}")
 
 def create_data_yaml():
     data = {
@@ -82,10 +82,10 @@ def create_data_yaml():
     with open(yaml_path, "w") as f:
         yaml.dump(data, f)
 
-    print(f"📄 data.yaml created at: {yaml_path}")
+    print(f"data.yaml created at: {yaml_path}")
 
 if __name__ == "__main__":
     make_dirs()
     split_and_move_data()
     create_data_yaml()
-    print("🎉 Dataset preparation complete!")
+    print("Dataset preparation complete!")
