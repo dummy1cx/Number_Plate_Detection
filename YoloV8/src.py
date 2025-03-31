@@ -52,6 +52,6 @@ if os.path.exists(model_path):
         wandb.log_artifact(artifact)
         print("WandB Artifact logged successfully.")
     except Exception as e:
-        print(f"⚠️ Failed to log W&B artifact: {e}")
+        print(f"Failed to log W&B artifact: {e}")
 else:
     print(f"best.pt not found at: {model_path}")
