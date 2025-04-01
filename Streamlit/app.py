@@ -14,7 +14,8 @@ import pytesseract
 
 
 # Load best saved model
-model = YOLO("best.pt")  
+model_path = os.path.join(os.path.dirname(__file__), "best.pt")
+model = YOLO(model_path)  
 
 st.set_page_config(page_title="Number Plate Detection", layout="centered")
 st.title("Vehicle Number Detection")
