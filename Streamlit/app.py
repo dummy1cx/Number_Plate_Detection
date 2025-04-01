@@ -14,7 +14,7 @@ import pytesseract
 
 
 # Load best saved model
-model = YOLO("/Users/abhishekdas/Documents/INM_705/Number_Plate_Detection/YoloV8/best.pt")  
+model = YOLO("best.pt")  
 
 st.set_page_config(page_title="Number Plate Detection", layout="centered")
 st.title("Vehicle Number Detection")
