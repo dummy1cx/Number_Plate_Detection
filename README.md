@@ -1,4 +1,6 @@
 # Number_Plate_Detection
+![Number Plate Detection](gif.gif)
+
 ## NUmber Plate Detection using ViT + YOLOv4
 
 ### Introduction
