@@ -1,7 +1,7 @@
 torch
 torchvision
-opencv-python
-numpy
+ultralytics
+opencv-python-headless
 matplotlib
 pandas
 pillow
@@ -10,9 +10,4 @@ scikit-learn
 tqdm
 tensorboard
 pyyaml
-opencv-python
-matplotlib
-ultralytics
 pytesseract
-pillow
-opencv-python-headless
