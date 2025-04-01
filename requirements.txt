@@ -13,3 +13,6 @@ pyyaml
 opencv-python
 matplotlib
 ultralytics
+pytesseract
+pillow
+opencv-python-headless
