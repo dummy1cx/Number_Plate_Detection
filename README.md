@@ -9,6 +9,10 @@
 
 ### Architecture
 
+#### YOLOv8 Ultralytics
+#### YOLOv4 x Hybrid
+#### Others
+
 ### Model
 
 ### Inference
