@@ -76,3 +76,4 @@ def decode_yolo_output(output, anchors, stride, conf_thresh=0.5, iou_thresh=0.05
             boxes.append([])
 
     return boxes
+
