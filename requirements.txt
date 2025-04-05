@@ -12,3 +12,4 @@ tensorboard
 pyyaml
 pytesseract
 streamlit
+torchmetrics
