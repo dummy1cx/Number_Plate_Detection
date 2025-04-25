@@ -3,6 +3,10 @@ import torch.nn.functional as F
 from ciou_loss import compute_ciou_loss
 from focal_loss import focal_loss
 
+## complete loss function for YOLO hybrid architeture
+## implemented a CIoU loss for objectness score 
+## replaces a BCE with focal loss for classification loss
+
 def compute_yolo_loss(pred_outputs, targets, model):
     device = pred_outputs[0].device
     batch_size = len(targets)
