@@ -40,7 +40,7 @@ def validate(model, dataloader, conf_threshold=0.05):
             images = images.to(DEVICE)
             targets = [t.to(DEVICE) for t in targets]
 
-            preds = model(images)  # should return [P3, P4, P5]
+            preds = model(images)  
             loss, obj_loss, cls_loss, box_loss = compute_yolo_loss(preds, targets, model)
             val_loss += loss.item()
 
