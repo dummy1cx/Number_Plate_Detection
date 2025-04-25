@@ -4,6 +4,7 @@ import torch.nn as nn
 
 ## --------------------------------------------------
 ## The code of attention is refernced from github accounts
+## attention sources are referenced in written report
 ## --------------------------------------------------
 
 class ChannelAttention(nn.Module):

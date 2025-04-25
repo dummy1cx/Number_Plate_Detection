@@ -66,7 +66,7 @@ def main():
         current_map = wandb.run.summary.get("val_mAP", 0.0)
         if current_map > best_map:
             best_map = current_map
-            #saving th e best model to artifacts in wandb
+            #saving th e best model to artifacts in wandb for model tracking
             torch.save(model.state_dict(), CHECKPOINT_PATH)
             artifact = wandb.Artifact("FRCNN-x-Attention", type="model")
             artifact.add_file(CHECKPOINT_PATH)
