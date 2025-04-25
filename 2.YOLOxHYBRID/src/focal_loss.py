@@ -3,6 +3,8 @@ import torch.nn.functional as F
 
 ## --------------------------------------------------------------
 ## This code is refercned fro pytorch vision modules
+## focal loss replaces the binary cross entropy in classification loss
+## focal loss implemented after compring the result with BCE
 ## ---------------------------------------------------------------
 
 def focal_loss(inputs, targets, alpha=0.25, gamma=2.0, reduction="sum"):

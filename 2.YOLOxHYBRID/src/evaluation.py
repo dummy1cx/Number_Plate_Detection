@@ -24,17 +24,8 @@ def compute_iou(box1, box2):
 
 def calculate_map_score(predictions, targets, iou_threshold=0.5):
     """
-    Approximate mAP using harmonic mean of precision and recall (F1-like metric).
-    
-    Args:
-        predictions (list[list[Tensor]]): Predicted boxes per image.
-        targets (list[Tensor]): Ground truth boxes per image.
-        iou_threshold (float): Threshold for IoU match.
-
-    Returns:
-        float: mAP-like score (harmonic mean of precision & recall)
-        float: precision (optional)
-        float: recall (optional)
+    Approximate mAP using average of precision and recall (F1-like metric).
+    iou threshold kept 0.5 for avoiding noise and efficiency
     """
     tp, fp, fn = 0, 0, 0
 
@@ -59,12 +50,12 @@ def calculate_map_score(predictions, targets, iou_threshold=0.5):
 
     precision = tp / (tp + fp + 1e-6)
     recall = tp / (tp + fn + 1e-6)
-    map_score = (precision * recall) / (precision + recall + 1e-6)  # F1-like mAP
+    map_score = (precision * recall) / (precision + recall + 1e-6)  
 
-    return map_score  # Optionally return (map_score, precision, recall)
+    return map_score  
 
 
-# Optional quick test
+
 if __name__ == "__main__":
     preds = [[torch.tensor([10., 10., 50., 50.])]]
     gts = [[torch.tensor([12., 12., 48., 48.])]]
