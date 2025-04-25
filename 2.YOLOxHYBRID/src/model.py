@@ -7,7 +7,7 @@ from torchvision import models
 ## ----------------------------------------------------------------------------
 ## The codes are referenced from the official research papers of CBAM author
 ## Multiple github repos are referenced for this architure
-## I do not claim that this code is written by me 
+## I do not claim of ownerhip of the codes
 ## The codes are referenced only for educational purpose
 ## All the referenced sources are outlined in the written report
 ## ----------------------------------------------------------------------------
@@ -27,7 +27,7 @@ class CBAM(nn.Module):
 
     def forward(self, x):
         # Channel Attention
-        avg_out = self.fc2(self.relu(self.fc1(self.avg_pool(x))))
+        avg_out = self.fc 2(self.relu(self.fc1(self.avg_pool(x))))
         max_out = self.fc2(self.relu(self.fc1(self.max_pool(x))))
         # Combining average and max pool paths
         scale = self.sigmoid(avg_out + max_out)
