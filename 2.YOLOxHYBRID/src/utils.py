@@ -2,19 +2,10 @@ import torch
 from torchvision.ops import nms
 
 def decode_yolo_output(output, anchors, stride, conf_thresh=0.5, iou_thresh=0.05):
-    """
-    Decode YOLO output for a single scale.
-
-    Args:
-        output (Tensor): [B, C, H, W]
-        anchors (list): [(w, h), ...]
-        stride (int): 32, 16, or 8
-        conf_thresh (float): confidence threshold
-        iou_thresh (float): IoU for NMS
-
-    Returns:
-        list of Tensors [x1, y1, x2, y2] per image
-    """
+   ##--------------------------------
+   ## Decide yolo output for single scale
+   ## with iou _threshold = 0.5
+   ##--------------------------------
     B, C, H, W = output.shape
     num_anchors = len(anchors)
     num_classes = C // num_anchors - 5
