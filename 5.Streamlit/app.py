@@ -14,6 +14,8 @@ import pytesseract
 
 
 # Load best saved model
+# due to size constraint best.pt will be removed before pushing the file to github
+
 model_path = os.path.join(os.path.dirname(__file__), "best.pt")
 model = YOLO(model_path)  
 
